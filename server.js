@@ -5,7 +5,8 @@ const port = process.env.PORT || 5000
 const app = express()
 
 
-const publicDirectory = path.join(__dirname, './public')
+const publicDirectory = path.join(__dirname, 'public')
+console.log(publicDirectory)
 
 app.use(express.static(publicDirectory))
 

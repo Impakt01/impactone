@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js"></script>
+
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <br>  <br>  <br>
+
+
+
+
+    <div class="container-1">
+        <div class="box-1">
+            <h1>Box One</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Unde saepe ipsam corporis a. Obcaecati aut reiciendis tenetur a libero,
+                  dolores cum officiis vitae nisi eligendi necessitatibus dolorum doloribus autem explicabo?\</p>
+        </div>
+
+        <div class="box-2">
+            <h1>Box two</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Unde saepe ipsam corporis a. Obcaecati aut reiciendis tenetur a libero,
+                  dolores cum officiis vitae nisi eligendi necessitatibus dolorum doloribus autem explicabo?\</p>
+        </div>
+
+        <div class="box-3">
+            <h1>Box three</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Unde saepe ipsam corporis a. Obcaecati aut reiciendis tenetur a libero,
+                  dolores cum officiis vitae nisi eligendi necessitatibus dolorum doloribus autem explicabo?\</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="container-2">
+        <div class="box">
+            <h1>Box One</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Unde saepe ipsam corporis a. Obcaecati aut reiciendis tenetur a libero,
+                  dolores cum officiis vitae nisi eligendi necessitatibus dolorum doloribus autem explicabo?\</p>
+        </div>
+
+        <div class="box">
+            <h1>Box two</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Unde saepe ipsam corporis a. Obcaecati aut reiciendis tenetur a libero,
+                  dolores cum officiis vitae nisi eligendi necessitatibus dolorum doloribus autem explicabo?\</p>
+        </div>
+
+        <div class="box">
+            <h1>Box three</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Unde saepe ipsam corporis a. Obcaecati aut reiciendis tenetur a libero,
+                  dolores cum officiis vitae nisi eligendi necessitatibus dolorum doloribus autem explicabo?\</p>
+        </div>
+
+    </div>
+	
+	
+	// console.log('hhi js')
+
+
+// const carts = document.querySelectorAll('.add-cart')
+
+// let products = [
+//     {
+//         name: 'beard Oil',
+//         tag: 'beard-oil',
+//         price: 50,
+//         inCart: 0
+//     },
+
+//     {
+//         name: 'tweezer',
+//         tag: 'tweezer',
+//         price: 50,
+//         inCart: 0
+//     },
+
+//     {
+//         name: 'Wig',
+//         tag: 'wig-',
+//         price: 50,
+//         inCart: 0
+//     },
+
+//     {
+//         name: 'lipGloss',
+//         tag: 'lipgloss-',
+//         price: 50,
+//         inCart: 0
+//     }
+
+// ]
+
+// for (let i = 0; i < carts.length; i++) {
+//     carts[i].addEventListener('click', (e) => {
+//         e.preventDefault()
+//         cartNumbers(products[i])
+//         totalCost(products[i])
+//     })
+// }
+
+// function onLoadCartNumbers() {
+//     let productNumbers = localStorage.getItem('cartNumbers')
+
+//     if (productNumbers) {
+//         document.querySelector('.cart span').textContent = productNumbers
+//         productNumbers.textContent = productNumbers
+//     }
+// }
+
+// function cartNumbers(product) {
+//     let productNumbers = localStorage.getItem('cartNumbers')
+
+//      productNumbers = parseInt(productNumbers)
+    
+//     if (productNumbers) {
+//         localStorage.setItem('cartNumbers', productNumbers + 1)
+//         document.querySelector('.cart span').textContent = productNumbers + 1
+//     } else {
+//     localStorage.setItem('cartNumbers', 1)
+//     document.querySelector('.cart span').textContent = 1
+//     }
+
+//     setItems(product)
+
+// }
+
+// function setItems(product) {
+//     let cartItems = localStorage.getItem('productsInCart')
+//     cartItems = JSON.parse(cartItems)
+
+//     if(cartItems != null) {
+
+//         if (cartItems[product.tag] == undefined) {
+//             cartItems = {
+//                 ...cartItems,
+//                 [product.tag]: product
+//             }
+//         }
+//         cartItems[product.tag].inCart += 1
+//     } else {
+//         product.inCart = 1
+
+//         cartItems = {
+//             [product.tag]: product
+//         }
+//     }
+   
+
+//     const cartItemsObject = JSON.stringify(cartItems)
+//     localStorage.setItem('productsInCart', cartItemsObject )
+// }
+
+
+// function totalCost(product) {
+//     let cartCost = localStorage.getItem('totalCost')
+
+//     console.log('My cartCost is', cartCost)
+
+//     if (cartCost != null) {
+//         cartCost = parseInt(cartCost)
+//         localStorage.setItem('totalCost', cartCost +
+//         product.price)
+//     } else {
+//         localStorage.setItem('totalCost', product.price)
+//     }
+// }
+
+// function displayCart() {
+//     let cartItems = localStorage.getItem('productsInCart')
+//     cartItems = JSON.parse(cartItems)
+//     let productContainer = document.querySelector('.products')
+//     let cartCost = localStorage.getItem('totalCost')
+
+//     if ( cartItems && productContainer ) {
+//         productContainer.innerHTML = ''
+//         Object.values(cartItems).map(item => {
+//             productContainer.innerHTML += `
+            // <div class="product">
+            // <i class="fas fa-times-circle"></i>
+            // <img src="../img/${item.tag}.png" class="item-img">
+            // <span>${item.name}</span>
+            // </div>
+
+            // <div class="price">${item.price} USD </div>
+
+            // <div class="quantity">
+            // <i class="fas fa-arrow-right"></i>
+            // <span>${item.inCart}</span>
+            // <i class="fas fa-arrow-left"></i>
+            // </div>
+            
+            // <div class="total">
+            //     ${item.inCart * item.price} USD
+            // </div>
+//             ` 
+            
+//         })
+
+//         productContainer.innerHTML += `
+//         <div class="basketTotalContainer">
+//             <h4 class="basketTotaTitle"> 
+//             Total Price
+//             </h4> &nbsp &nbsp
+//             <h4 class="basketTotal">
+//             ${cartCost} USD
+//             </h4>
+//         </div>
+//         `
+//     }
+// }
+
+
+// onLoadCartNumbers();
+
+// displayCart()
+
+
+// // payment
+
+// const button = document.querySelector('#button')
+
+// button.addEventListener('click', () => {
+
+//     let cartItems = localStorage.getItem('productsInCart')
+//             cartItems = JSON.parse(cartItems)
+//             console.log(cartItems.inCart)
+   
+//     fetch('/create-checkout-section', {
+        
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             items: [
+//                 {id: 1, quantity: 1},
+//                 {id: 2, quantity: 1},
+//                 {id: 3, quantity: 1},
+//                 {id: 4, quantity: 1}
+//             ]
+//         })
+//     }).then(res => {
+//         if(res.ok) return res.json()
+//         return res.json().then(json => Promise.reject
+//             (json))
+//     }).then(({ url }) => {
+//         window.location = url
+//     }).catch(e => {
+//         console.log(e.error)
+//     })
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="graphics design logo flyer">
+  <meta name="keywords" content="logo graphics design">
+  <meta name="author" content="impact illustration">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/e0495e7cf3.js" crossorigin="anonymous"></script>
+  
+ 
+<title> Homepage </title>
+<style>
+#myNavStyles {
+    background-color: #f9f9f9;
+    border: none;
+}
+
+
+#myNavbar #myListStyle li a {
+    color: #ff9cbd;
+    font-weight: bold;
+}  
+
+#myNavbar #myListStyle li a:hover {
+    border-bottom: 2px #baf1ff solid;
+}  
+
+    .cart-section{
+        padding: 100px;
+       
+    }
+
+    .cart-section {
+        background-image:url("./img/background.jpg");
+background-size:cover; 
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+padding: 80px;
+    }
+
+    #products-container {
+        max-width: 650px;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .product-header{
+        width: 100%;
+        max-width: 650px;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .checkout-button{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .checkout-button button {
+        background-color: #005c91;
+        color: white;
+        padding: 15px 25px 15px 25px;
+        border: none;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+
+    .checkout-button button:hover {
+        background-color: green;
+    }
+
+    
+    .total{
+         display: flex;
+        justify-content: flex-end;
+    }
+
+    .total strong {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .cart-row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .cart-item {
+         width: 55%;
+        border-bottom: 1px solid grey;
+    }
+
+    .cart-price {
+         width: 15%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+    }
+   
+
+    .product-title{
+        width: 55%;
+        border-bottom: 1px solid grey;
+    }
+
+    .cart-quantity {
+        width: 30%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+    }
+
+    .price {
+        width: 15%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+    }
+
+    .quantity {
+        width: 30%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        align-items: center;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    .class-quantity-input {
+        width: 50px;
+    }
+
+    #footer2{
+        background-color: white;
+        
+    }
+    .footer1{
+        background-color:#005c91 ;
+        padding: 80px 0px 0px 0px;
+        margin-top: 100vh;
+    }
+   
+    #footerdiv2 h1 {
+        font-weight: bold;
+       color: white;
+    }
+
+    #footerdiv1 h2 {
+        font-weight: bold;
+       color: white;
+    }
+
+    #footerdiv1 address {
+        font-weight: bold;
+       color: white;
+    }
+
+   
+
+    #footerdiv2 a{
+        color:white;
+        border-right: 2px white solid;
+        padding: 0px 15px 0px 5px;
+    }
+    
+  
+   
+    .item-img{
+        width: 50px;
+    }
+
+
+@media  (max-width: 762px) {
+    #myNavStyles {
+    background-color: #f9f9f9;
+   }
+
+   #myNavbar {
+       text-align: center;
+       margin-top: 35px;
+   }
+
+   #footerdiv1 {
+       margin-left: 100px;
+    }
+    #footerdiv2{
+        margin-left: 100px;
+    }
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="backGround">
+    <nav class="navbar-default navbar navbar-fixed-top" id="myNavStyles">
+            <div class="container" class="row">
+
+                <div class="col-md-6">
+        <div class="nav-header">
+
+            <a href="index" class="navbar-brand"> YOURLOGO </a>
+            
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span   class="icon-bar"></span>
+                <span   class="icon-bar"></span>
+                <span   class="icon-bar"></span>   
+            </button>
+
+           
+       </div>
+        </div>
+
+        
+        <div class="col-md-6 collapse navbar-collapse" id="myNavbar">
+            <ul  class="nav navbar-nav" id="myListStyle">
+                <li><a href="index"> Home </a></li>
+                <li><a href="index"> Product </a></li>
+                <li><a href="index"> Our Services </a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a href="booking"> Book Now </a></li>
+                <li class="cart"> <a  style=" color: #005c91;
+                background-color: #ff9cbd;" href="cart"> cart &nbsp; <i class="fas fa-cart-plus"></i> <span>0</span></a> </li>
+            </ul>
+        </div>
+
+        </div>
+    </nav>
+
+
+
+{{!-- <div class="cart-section">
+
+    <div class="container-fluid" id="products-container">
+
+        <div class="product-header">
+        <h4 class="product-title"> PRODUCT </h4>
+        <h4 class="price"> PRICE </h4>
+        <h4 class="quantity"> QUANTITY </h4>
+        </div>
+
+    <div class="cart-items">  
+
+       <div class="cart-row">
+
+            <div class="cart-item cart-column">
+            <img src="../img/tweezer.png" class="item-img">
+            <span class="cart-item-title">TWEEZER</span>
+            </div>
+
+            <span class="cart-price cart-column"> 5.99 USD </span>
+
+            <div class="cart-quantity cart-column">
+            <input type="number" value="1" class="class-quantity-input"> &nbsp &nbsp &nbsp
+            <button class="delete-cart-item" type="button"> <i class="fas fa-times-circle"></i></button> 
+            </div>
+
+        </div>
+
+        
+         <div class="cart-row">
+
+            <div class="cart-item cart-column">
+            <img src="../img/wig-.png" class="item-img">
+            <span class="cart-item-title">WIG</span>
+            </div>
+
+            <span class="cart-price cart-column"> 40.99 USD </span>
+
+            <div class="cart-quantity cart-column">
+            <input type="number" value="2" class="class-quantity-input"> &nbsp &nbsp &nbsp
+            <button class="delete-cart-item" type="button"> <i class="fas fa-times-circle"></i></button> 
+            </div>
+
+        </div>
+           
+    </div><br>
+
+     <div class="total">
+       <strong class="cart-total-title"> Total </strong> &nbsp &nbsp &nbsp
+       <span class="cart-total-price"> $80.99</span>
+    </div>
+
+    <div class="checkout-button">
+        <button id="button">CHECKOUT</button>
+    </div>
+        
+
+    </div>
+
+</div> --}}
+
+
+
+<div class="footer1">
+    <div class="container">
+    
+        <div class="row">
+    
+            <div class="col-md-4" id="footerdiv1">
+                <h2> Follow US</h2>
+               <a> <i style="color: #ff9cbd; width: 100px;" class=" fa-4x fab fa-instagram-square"></i> </a>
+               <a>  <i style="color: #ff9cbd; width: 100px" class=" fa-4x fab fa-facebook-square"></i> </a>
+               <a>  <i style="color: #ff9cbd; width: 100px" class=" fa-4x fab fa-youtube"></i> </a>
+            </div>
+    
+            <div class="col-md-4" id="footerdiv1">
+                <h2> Address </h2>
+                <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore architecto praesentium, nam,
+                     alias facilis 
+                    </address>
+    
+            </div>
+    
+            <div class="col-md-4" id="footerdiv2">
+                <h1>YOURLOGO</h1>
+                
+                     <a href="about.html">About Us </a>
+                     <a href="booknow">BookNow </a>
+                
+            </div>
+    
+        </div>
+
+        <div class="container" id="footer2">
+    
+            <p style="text-align: center; padding: 20px;">© 2022 Impact Illustration. All rights reserved.</p>
+        
+        </div>
+    
+    </div>
+    </div><br>
+    
+   
+    
+    
+
+
+const storeItems = new Map([
+//    [ 1, {priceInCents: 5000, name: 'beard-oil'}],
+//    [ 2, {priceInCents: 5000, name: 'beard-oil'}],
+//    [ 3, {priceInCents: 5000, name: 'beard-oil'}],
+//    [ 4, {priceInCents: 5000, name: 'beard-oil'}],
+// ])
+
+// app.post('/create-checkout-section', async (req, res) => {
+//     try {
+
+//         const session = await stripe.checkout.sessions.create({
+//             payment_method_types: ['card'],
+//             mode: 'payment',
+//             line_items: req.body.items.map(item => {
+//                 const storeItem = storeItems.get(item.id)
+//                 return {
+//                     price_data: {
+//                         currency: 'usd',
+//                         product_data: {
+//                             name: storeItem.name
+//                         },
+//                         unit_amount: storeItem.priceInCents
+//                     },
+//                     quantity: item.quantity
+//                 }
+//             }) ,
+//             success_url: `${process.env.SERVER_URL}/success.html`,
+//             cancel_url: `${process.env.SERVER_URL}/cancel.html`
+//         })
+//         res.json({ url: session.url})
+//     } catch (e) {
+//         res.status(500).json({ error: e.message})
+//     }
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/app.js" ></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 468px) {
+    .container-1{
+        /* 
+        align-items: flex-start; 
+         align-items: flex-end; 
+         align-items: flex-center; 
+        flex-direction: column; */
+    
+        display: flex;
+    
+    }
+
+    .container-2{
+        display: flex;
+        /*  justify-content: flex-start;*/
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        justify-content: space-between;
+    }
+}
+
+
+
+
+.container-1 div, .container-2 div{
+    border:1px grey solid;
+    padding: 10px;
+}
+
+
+.box-1 {
+    flex: 2; 
+    order: 2;
+    
+}
+
+.box-2 {
+    flex: 1;
+    order: 1;
+}
+
+.box-3 {
+    flex: 1;
+    order: 3;
+}
+
+
+
+
+
+.box{
+    flex-basis :20%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+require('dotenv').config()
+
+
+
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').load()
+}
+const stripesecretKet = process.env.STRIPE_SECRET_KEY
+
+
+
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY
+const stripePublicKey = process.env.STRIPE_PUBLIC_KEY
+
+console.log(stripeSecretKey, stripePublicKey)
+
+
+
+
+
+
+
+
+
+ {{!-- <div class="col-md-3">
+            <div class="productBox">
+                <img src="./img/tweezer.png" alt="tweezer" class="img-responsive shop-item-image">
+                <h3 class="shop-item-title">Tweezer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur enim nemo eaque consequatur! 
+                    Aspernatur architecto, aut unde voluptas</p>
+                    <h4 class="shop-item-price"> 5.99 USD </h4>
+                   <button class="add-cart cart1">Add To Cart </button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="productBox">
+                <img src="./img/wig-.png" alt="wig" class="img-responsive shop-item-image">
+                <h3 class="shop-item-title">  Wig</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur enim nemo eaque consequatur! 
+                    Aspernatur architecto, aut unde </p>
+                    <h4 class="shop-item-price"> 50 USD </h4>
+                   <button class="add-cart cart1">Add To Cart </button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="productBox">
+                <img src="./img/lipgloss-.png" alt="lipgloss" class="img-responsive shop-item-image">
+                <h3 class="shop-item-title">Lipgloss</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur enim nemo eaque consequatur! 
+                    Aspernatur architecto, aut unde voluptas </p>
+                    <h4 class="shop-item-price"> 15 USD </h4>
+                    <button class="add-cart cart1">Add To Cart </button>
+            </div>
+        </div> --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
