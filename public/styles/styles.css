@@ -34,7 +34,7 @@ body{margin:auto;
 .frontCss{
 	background-image:  linear-gradient(to right, #0e05c6, #140173) ;
 	background-size:cover;
-	padding:0px 0px 200px 0px;
+	padding: 50px;
 }
 
 #nav1Css #navcontentCss{
@@ -236,7 +236,6 @@ font-family: 'Poppins', sans-serif;
 }
 
 #panelCss .collapse .panel-body ul li{
-	list-style-type:;
 	color: #5e5d5c;
 	font-family: 'monospace' sans-serif;
 	font-size: 18px;
@@ -308,10 +307,6 @@ padding:70px 0px 70px 0px;
 	padding:100px 0px 100px 0px;
 }
 
-
-#getStartedCss{
-	margin:;
-}
 #getStartedCss a:link{
 	text-align:center; font-family: 'Poppins', sans-serif;
 color:white;
