@@ -34,7 +34,7 @@ body{margin:auto;
 .frontCss{
 	background-image:  linear-gradient(to right, #0e05c6, #140173) ;
 	background-size:cover;
-	padding: 50px;
+	
 }
 
 #nav1Css #navcontentCss{
@@ -68,6 +68,11 @@ font-weight: 500; transition:0.3s;}
 	opacity:0;
 }
 
+#getCss #get2Css{
+	margin-top: -70px;
+}
+
+
 @keyframes get3{
 	0%{
 		transform: translateX(10000px);
@@ -86,15 +91,18 @@ font-weight: 500; transition:0.3s;}
 	transform: translateX(10000px);
 }
 
+#getCss{
+	padding-bottom: 30px;
+}
+
 #getCss #get2Css h1{ margin-top:190px;
 	font-family: 'Poppins', sans-serif;
     color:white;
     font-weight: 600;
     line-height: 40px;
 }
-#getCss #get2Css h1 span{
-	color:blue;
-}
+
+
 #getCss #get2Css p{ 
 	font-family: 'Poppins', sans-serif;
     color:white;
@@ -103,7 +111,7 @@ font-weight: 500; transition:0.3s;}
 }
 
 #getCss #get2Css ul{list-style:none; margin-left:-40px; }
-#getCss #get2Css ul li{display:inline; padding:0px  20px 0px 0px;}
+#getCss #get2Css ul li{display:inline; padding:0px  20px 0px 0px; margin-bottom: 20px;}
 
 
 
@@ -467,7 +475,7 @@ background-attachment:fixed;}
 		#nav1Css{
 	background-image:linear-gradient(to right, #0e05c6, #140173) ;
 }
-#getCss #get2Css h1{ margin-top:0px; text-align:center;}
+#getCss #get2Css h1{ text-align:center;}
 #getCss #get2Css ul{text-align:center;}	
 
 
@@ -502,6 +510,15 @@ background-attachment:fixed;}
 
  #website {
 	 margin-top: 30px;
+ }
+
+ #getCss #get2Css{
+	margin-top: -180px;
+}
+
+
+ #getCss #get2Css p {
+	 text-align: center;
  }
 		
 }
